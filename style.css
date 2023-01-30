@@ -1,24 +1,164 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+:root {
+  --blue: #6946F4;
+}
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
+/* navbar */
 nav {
-  height: 60px;
-  padding: 2% 10%;
-  background: url('./assets/icons/components.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+	height: 60px;
+	padding: 2% 10%;
+	background: url('./assets/icons/components.png');
+	background-repeat: no-repeat;
+	background-position: 35% 0;
+	background-size: contain;
 }
 
 nav .brand .brand-logo {
-  height: 31px;
+	height: 31px;
 }
+/* end navbar */
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+/* start login */
+#login {
+	margin-top: 80px;
+	width: 570px;
+}
+
+.login-card {
+	border: 1px solid #ababab;
+	border-radius: 4px;
+	padding: 55px;
+}
+
+.login-card a {
+  color: var(--blue);
+}
+
+.login-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.login-form h1 {
+	font-family: Roboto;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28px;
+	letter-spacing: 0em;
+	text-align: left;
+}
+
+.login-form .form-group {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.login-form .form-group input {
+	display: block;
+	width: 100%;
+	border: 0;
+	border-bottom: 1px solid #ababab;
+  padding-bottom: 8px;
+  font-size: 16px;
+}
+
+.login-form input:focus {
+	outline: none;
+}
+
+input:focus::-webkit-input-placeholder {
+	color: transparent;
+}
+
+.login-form .remember-group {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-form .input-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  height: 50px;
+  background: #6946F4;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.create-account-suggestion {
+  margin-top: 16px;
+  text-align: center;
+}
+
+.divider {
+  border-top: 1px solid #ababab;
+  text-align: center;
+  font-size: 16px;
+  text-transform: capitalize;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.divider span {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  background: #fff;
+  width: 30px;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn-group .btn {
+  border: 1px solid #C7C7C7;
+  border-radius: 100px;
+  background: transparent;
+  color: #040404;
+  margin: 0;
+}
+
+.btn-group .btn img {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 6px;
+  left: 6px;
+}
+/* end login */
