@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --blue: #6946F4;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+/* navbar */
+nav {
+	height: 60px;
+	padding: 2% 10%;
+	background: url('./assets/icons/components.png');
+	background-repeat: no-repeat;
+	background-position: 35% 0;
+	background-size: contain;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .brand .brand-logo {
+	height: 31px;
+}
+
+nav .nav-list {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+nav .nav-list .nav-item {
+  margin-right: 60px;
+}
+
+nav .nav-list .nav-item a {
+  text-decoration: none;
+  color: #3C3C3C;
+}
+/* end navbar */
+
+main {
+	padding: 0 10%;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  background: #6946F4;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+/* start search */
+#search {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.search-form .search-input-group {
+  position: relative;
+}
+
+.search-form .search-input-group .search-input {
+  width: 570px;
+  height: 60px;
+  border: none;
+  border-radius: 4px;
+  padding: 18px 53px;
+  font-size: 16px;
+  background: #F1F1F1;
+  outline: none;
+}
+
+.search-form .search-input-group .search-icon {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+  width: 24px;
+  height: 24px;
+}
+
+.search-form .search-input-group .submit-btn {
+  height: 60px;
+  padding: 0 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/* end search */
+
+/* start book collection */
+#books {
+  margin-top: 72px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+/* end book collection */
+
+/* start book card */
+.book-card {
+  width: 31%;
+  padding: 18px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.book-card .card-img-parent {
+  background: #F1F1F1;
+  border-radius: 20px;
+  padding: 28px 48px;
+}
+
+.book-card img {
+  width: 100%;
+}
+
+.book-card .card-body .book-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+.book-card .card-body .book-author {
+  font-size: 16px;
+  font-weight: normal;
+  color: #545454;
+  margin-top: 8px;
+}
+
+.book-card .card-footer {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-card .card-footer .book-price {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 42.19px;
+  color: #6946F4;
+}
+
+.book-card .card-footer .buy-now-btn {
+  border-radius: 10px;
+}
+/* end book card */
