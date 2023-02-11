@@ -122,6 +122,7 @@ main {
   width: 31%;
   padding: 18px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
 }
 
 .book-card .card-img-parent {
